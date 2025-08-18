@@ -1,7 +1,7 @@
-# Airline Passenger Satisfaction — ML Analysis (University Project)
+# Airline Passenger Satisfaction - ML Analysis (University Project)
 
 ## Project Overview
-This project analyzes **airline passenger satisfaction** using multiple machine learning models.  
+This project analyzes **airline passenger satisfaction** using multiple machine learning models.
 The goal is to identify key drivers of satisfaction and predict whether a passenger is satisfied based on their flight experience.
 
 The workflow covers:
@@ -13,10 +13,10 @@ The workflow covers:
 
 
 ## Tech Stack
-- Python (pandas, numpy, matplotlib, seaborn)  
-- Scikit-learn for baseline models and evaluation  
-- XGBoost & LightGBM for gradient boosting  
-- SHAP for explainability  
+- Python (pandas, numpy, matplotlib, seaborn)
+- Scikit-learn for baseline models and evaluation
+- XGBoost & LightGBM for gradient boosting
+- SHAP for explainability
 
 
 ## Repository Structure
@@ -32,22 +32,22 @@ The workflow covers:
 ## Workflow
 
 ### 1. Data Preprocessing
-- Removed ID columns  
-- Handled missing values (`Arrival Delay in Minutes`)  
-- Encoded target variable (`satisfied = 1`, `neutral/dissatisfied = 0`)  
-- One-hot encoded categorical features  
+- Removed ID columns
+- Handled missing values (`Arrival Delay in Minutes`)
+- Encoded target variable (`satisfied = 1`, `neutral/dissatisfied = 0`)
+- One-hot encoded categorical features
 
 ### 2. Model Training & Validation
-- Logistic Regression (baseline)  
-- Random Forest  
-- XGBoost  
-- LightGBM  
-- 5-fold cross-validation on training set  
-- Final evaluation on test set  
+- Logistic Regression (baseline)
+- Random Forest
+- XGBoost
+- LightGBM
+- 5-fold cross-validation on training set
+- Final evaluation on test set
 
 ### 3. Explainability (SHAP)
-- Global importance bar plots  
-- Beeswarm plots to show direction & distribution of effects  
+- Global importance bar plots
+- Beeswarm plots to show direction & distribution of effects
 
 
 ## Results
@@ -66,9 +66,9 @@ The workflow covers:
 
 From the SHAP analysis and model results, we identify several key drivers of passenger satisfaction:
 
-- **Type of Travel (Business vs Personal):** Business travelers report higher satisfaction, likely due to upgraded service and loyalty perks.  
-- **Class (Economy vs Business/First):** Premium class strongly boosts satisfaction, highlighting the role of comfort and service quality.  
-- **Flight Delays:** Longer delays significantly reduce satisfaction, especially arrival delays.  
-- **Inflight Service Ratings (e.g., WiFi, Food, Entertainment, Cleanliness):** Consistently among the top predictors of satisfaction.  
-- **Loyalty (Customer Type: Returning vs First-time):** Returning customers tend to be more satisfied, possibly reflecting loyalty programs and familiarity.  
+- **Type of Travel (Business vs Personal):** Business travelers report higher satisfaction, likely due to upgraded service and loyalty perks.
+- **Class (Economy vs Business/First):** Premium class strongly boosts satisfaction, highlighting the role of comfort and service quality.
+- **Flight Delays:** Longer delays significantly reduce satisfaction, especially arrival delays.
+- **Inflight Service Ratings (e.g., WiFi, Food, Entertainment, Cleanliness):** Consistently among the top predictors of satisfaction.
+- **Loyalty (Customer Type: Returning vs First-time):** Returning customers tend to be more satisfied, possibly reflecting loyalty programs and familiarity.
 
