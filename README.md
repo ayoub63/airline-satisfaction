@@ -1,4 +1,4 @@
-# Airline Passenger Satisfaction - ML Analysis (University Project)
+# Airline Passenger Satisfaction - ML Analysis 
 
 ## Project Overview
 This project analyzes **airline passenger satisfaction** using multiple machine learning models.
